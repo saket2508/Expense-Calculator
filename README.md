@@ -1,4 +1,4 @@
-###  Expense-Calculator
+##  Expense-Calculator
 ## This python script will help you keep track of your monthly expenses.
 
 ### Some important features:
