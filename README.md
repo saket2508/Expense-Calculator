@@ -1,5 +1,5 @@
 ###  Expense-Calculator
-## This python script will help keep you keep track of your monthly expenses.
+# This python script will help keep you keep track of your monthly expenses.
 
 # Some important features:
 # 1. Allows users to break down their expenses into 4 main categories: food, laundry, essentials and misc.
