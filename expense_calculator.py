@@ -13,7 +13,7 @@ def getData():
     date= getDate()
     # user inputs their day to day expenses
     exp= float(input('How much did you spend today? '))
-    category= input('Where did you spend '+ str(exp)+' today(food/laundry/essentials/misc)?')
+    category= input('Where did you spend '+ str(exp)+' today(food/laundry/essentials/misc)? ')
 
     # A new table is created in case it doesn't already exist
     c.execute('CREATE TABLE IF NOT EXISTS expenses(date text,exp real,cat text)')
@@ -36,7 +36,10 @@ def calculateTotalMonthlyExpenses():
     print('You spent Rs '+str(sum)+' this month')
 
 def main():
-    calculateTotalMonthlyExpenses()
+    if(input('Do you want to enter your expenses? ')=='yes'):
+        getData()
+    if(input('Do you want to see how much you spent this month? ')=='yes'):
+        calculateTotalMonthlyExpenses()
     conn.close()
 
 if __name__ == "__main__":
